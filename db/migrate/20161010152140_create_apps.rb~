@@ -1,0 +1,14 @@
+class CreateApps < ActiveRecord::Migration
+  def change
+    create_table :apps do |t|
+      t.string :name
+      t.string :image_irl
+      t.string :developer
+      t.text :description
+      t.decimal :price
+      t.decimal :ranting
+
+      t.timestamps
+    end
+  end
+end
