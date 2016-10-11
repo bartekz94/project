@@ -14,7 +14,7 @@
         <dt><%= app.name %></dt>
 	<dt><%= app.developer %></dt>
     	<dd>
-      	  <%= truncate strip_tags(app.description), length: 240 %>
+      	  <%= app.description, length: 240 %>
     	</dd>
        </dl>
       </td>
