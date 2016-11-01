@@ -6,12 +6,14 @@ one:
   developer: MyString
   description: MyText
   price: 9.99
-  ranting: 9.99
+  ranting: 5
 
 two:
-  name: MyNewString
+  name: NewApp
   image_irl: MyString
   developer: MyString
   description: MyText
   price: 9.99
-  ranting: 9.99
+  ranting: 5
+
+

@@ -3,6 +3,21 @@ require 'test_helper'
 class AppsControllerTest < ActionController::TestCase
   setup do
     @app = apps(:one)
+    @update = {
+
+      :name        => 'Some App',
+      
+      :developer   => 'Some developer',
+
+      :description => 'Some description',
+
+      :image_url   => 'some.jpg',
+
+      :price       => 9.95,
+
+      :ranting     => 5
+
+    }
   end
 
   test "should get index" do
@@ -18,7 +33,7 @@ class AppsControllerTest < ActionController::TestCase
 
   test "should create app" do
     assert_difference('App.count') do
-      post :create, app: { description: @app.description, developer: @app.developer, image_irl: @app.image_irl, name: @app.name, price: @app.price, ranting: @app.ranting }
+      post :create, app: @update
     end
 
     assert_redirected_to app_path(assigns(:app))
@@ -35,7 +50,7 @@ class AppsControllerTest < ActionController::TestCase
   end
 
   test "should update app" do
-    patch :update, id: @app, app: { description: @app.description, developer: @app.developer, image_irl: @app.image_irl, name: @app.name, price: @app.price, ranting: @app.ranting }
+    put :update, :id => @app.to_param, :app => @update
     assert_redirected_to app_path(assigns(:app))
   end
 

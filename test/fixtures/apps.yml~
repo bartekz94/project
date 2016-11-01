@@ -6,7 +6,7 @@ one:
   developer: MyString
   description: MyText
   price: 9.99
-  ranting: 9.99
+  ranting: 5
 
 two:
   name: MyNewString
@@ -14,4 +14,6 @@ two:
   developer: MyString
   description: MyText
   price: 9.99
-  ranting: 9.99
+  ranting: 5
+
+
