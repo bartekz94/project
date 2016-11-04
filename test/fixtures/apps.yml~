@@ -1,19 +1,18 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  image_irl: MyString
-  developer: MyString
-  description: MyText
+  name: MyString1
+  image_irl: MyString1.png
+  developer: MyString1
+  description: MyText1
   price: 9.99
   ranting: 5
 
 two:
-  name: MyNewString
-  image_irl: MyString
-  developer: MyString
-  description: MyText
+  name: MyString2
+  image_irl: MyString2.png
+  developer: MyString2
+  description: MyText2
   price: 9.99
   ranting: 5
-
 

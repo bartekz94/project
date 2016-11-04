@@ -32,6 +32,14 @@
       margin-bottom: 2px;
       color: #227;
     }
+   d {
+      font-size: 100%;
+      font-family: sans-serif;
+      margin-left: 100px;
+      margin-top: 0;
+      margin-bottom: 2px;
+      color: #227;
+    }
 
     p, div.price_line {
       margin-left: 100px;
