@@ -2,17 +2,17 @@
   <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1>Your APP Catalog</h1>
 
 <% @apps.each do |app| %>
   <div class="entry">
     <%= image_tag(app.image_irl) %>
     <h3><%= app.name %></h3>
-    <div class="price_line">
-      <span class="price"><%= app.price %></span> 
-    </div>
     <div class="ranting_line">
-      <span class="ranting"><%= app.ranting %></span> 
+      <span class="ranting"><%= app.ranting, unit: '£' %></span> 
+    </div>
+    <div class="price_line">
+      <%= button_to 'Add to Cart', line_items_path(app_id: app) %>
+      <span class="price"><%= number_to_currency app.price, unit: '€' %></span>
     </div>
   </div>
 <% end %>

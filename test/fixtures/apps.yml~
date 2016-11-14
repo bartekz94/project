@@ -16,3 +16,11 @@ two:
   price: 9.99
   ranting: 5
 
+ruby:
+  Name: App
+  image_url: ruby.jpg
+  developer: some developer
+  description:
+    some description of an app
+  price: 49.95
+  ranting: 5
